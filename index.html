@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mathias H. Steffensen</title>
+    <style>
+        :root {
+            --bg-color: rgba(85, 46, 255, 1);
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+
+            background: var(--bg-color);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro {
+            position: fixed;
+            top: 0;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .intro p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-style: italic;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid black;
+        }
+
+        .logos {
+            display: flex;
+        }
+
+        .logo {
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+        }
+
+        @media (max-width: 600px) {
+            .logos {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro">
+        <h1 class="title">
+            Mathias H. Steffensen
+        </h1>
+
+        <p>
+            Software Developer from Copenhagen, Denmark
+        </p>
+    </div>
+
+    <div class="logos">
+        <a title="Checkout my open source code on GitHub" href="https://github.com/mathiashsteffensen?tab=repositories" target="_blank" rel="noreferrer" class="logo">
+            <img src="./github.png" alt="my github profile">
+        </a>
+
+        <a title="Connect with me on LinkedIn" href="https://www.linkedin.com/in/mathias-h-steffensen-3ba597202/" target="_blank" rel="noreferrer" class="logo">
+            <img src="./linkedin.png" alt="my linkedin profile">
+        </a>
+
+        <a title="Shoot me an email" href="mailto:mathiashsteffensen@protonmail.com" class="logo">
+            <img src="./email.png" alt="send me an email">
+        </a>
+    </div>
+</body>
+</html>
